@@ -13,7 +13,7 @@ import (
 func main() {
 
 	var wg sync.WaitGroup
-	inputString := flag.String("input", "http://golang.org\nhttps://google.com", "url's")
+	inputString := flag.String("input", "http://golang.org", "url's")
 	flag.Parse()
 
 	k := strings.Split(*inputString,`\n`)
